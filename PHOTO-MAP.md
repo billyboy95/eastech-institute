@@ -28,6 +28,21 @@ Holdings hub ([eastech.co.za](https://eastech.co.za/)) may use one campus-wide o
 
 Removed from Institute heroes and galleries: Food Court glass pavilion (`campus-building.jpg`), Food Court yard (`campus-courtyard.jpg`), Food Court signage (`food-court.jpg`, `campus-people.jpg`), mixed campus-wide/sky shots, school classroom blocks.
 
+## Sibling repos (same photo map)
+
+This Cloud Agent can push only `billyboy95/eastech-institute`. Holdings, Foundation, and Food Court were fixed locally; git bundles are in `patches/` so those PRs can be opened from a machine with write access:
+
+```bash
+# example: EASTC Holdings
+git clone https://github.com/billyboy95/eastech-holdings.git
+cd eastech-holdings
+git fetch ../eastech-institute/patches/eastech-holdings.bundle cursor/fix-campus-photos-b076:cursor/fix-campus-photos-b076
+git checkout cursor/fix-campus-photos-b076
+git push -u origin cursor/fix-campus-photos-b076
+```
+
+Same pattern for `patches/eastech-foundation.bundle` and `patches/eastech-food-court.bundle`.
+
 ## Sources and gaps
 
 - Google Drive folder [EASTC TECH SCHOOL](https://drive.google.com/drive/folders/15xIXQJ-cI2E89Hc6wY6oTSGWyVPTzRRX) (owner `nmshareman@gmail.com`) was **not accessible** from this environment.
