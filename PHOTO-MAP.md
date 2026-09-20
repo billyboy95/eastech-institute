@@ -58,7 +58,7 @@ These remain from older Pages deploys. They are Food Court, mixed yard, lounge, 
 
 ## Sources and gaps
 
-- Institute (#NATED) brick exterior: **Billy-supplied photograph** (19 Sep 2026) — reddish brick multi-storey, white EASTC Technocentric Varsity facade board, gate/courtyard. Site paths use `assets/img/institute-nated-building.jpg`.
+- Institute (#NATED) brick exterior: **Billy-supplied photograph** (19–20 Sep 2026) — reddish brick multi-storey, white EASTC Technocentric Varsity facade board, gate/courtyard. Committed as `assets/img/institute-nated-building.jpg`.
 - Google Drive folder [EASTC TECH SCHOOL](https://drive.google.com/drive/folders/15xIXQJ-cI2E89Hc6wY6oTSGWyVPTzRRX) (owner `nmshareman@gmail.com`) was not listable from this agent; not required now that Billy’s brick photo is the Institute exterior.
 - `blessing-web` was **not found** on disk.
 - Sibling GitHub Pages repos (holdings / foundation / food-court) cannot be pushed from this token. Bundles in `patches/` were generated under the **rejected** mapping; do not apply them until those repos are recut without Food Court-as-Institute.
