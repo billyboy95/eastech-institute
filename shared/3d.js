@@ -26,10 +26,10 @@
         layer.style.opacity = String(0.55 + p * 0.45);
       });
       const scenes = [
-        { at: 0, text: "EASTC Technocentric Varsity · Kempton Park" },
-        { at: 0.28, text: "01  EASTC Foundation NPC" },
-        { at: 0.54, text: "02  EASTECH Institute" },
-        { at: 0.78, text: "03  The Food Court" }
+        { at: 0, text: "EASTECH Institute · #NATED brick building" },
+        { at: 0.28, text: "EASTECH Institute · Kempton Park" },
+        { at: 0.54, text: "EASTECH Institute" },
+        { at: 0.78, text: "EASTECH Institute · 43 Maxwell Street" }
       ];
       let label = scenes[0].text;
       scenes.forEach((s) => { if (p >= s.at) label = s.text; });
