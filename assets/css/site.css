@@ -53,6 +53,14 @@ h1, h2, h3, h4 { font-family: "Montserrat", sans-serif; line-height: 1.15; }
   border-bottom: 1px solid rgba(212, 164, 55, 0.2);
 }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; min-height: 76px; gap: 24px; }
+.brand-lockup { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.parent-mark { display: inline-flex; align-items: center; line-height: 0; flex: 0 0 auto; }
+.crest {
+  width: 46px; height: auto; aspect-ratio: 567 / 550; object-fit: contain;
+  background: #fff; border-radius: 4px;
+}
+footer .crest { width: 72px; }
+footer a.parent-mark { display: inline-flex; margin: 0 0 14px; }
 .brand { display: flex; align-items: center; gap: 12px; color: #fff; }
 .mark {
   width: 44px; height: 44px; border-radius: 10px; background: var(--gold);
