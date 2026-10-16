@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 800" role="img" aria-labelledby="ceoTitle ceoDesc">
+  <title id="ceoTitle">Placeholder for the Institute CEO photograph</title>
+  <desc id="ceoDesc">Abstract monogram. Not a photograph of a person.</desc>
+  <rect width="640" height="800" fill="#0B1F3A"/>
+  <rect x="48" y="48" width="544" height="704" fill="none" stroke="#C9A227" stroke-width="4"/>
+  <circle cx="320" cy="300" r="112" fill="none" stroke="#C9A227" stroke-width="8"/>
+  <text x="320" y="322" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="700" fill="#C9A227">CEO</text>
+  <text x="320" y="500" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" letter-spacing="3" fill="#FFFFFF">PLACEHOLDER</text>
+  <text x="320" y="548" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#E8BC5A">EASTECH Institute</text>
+  <text x="320" y="640" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#FFFFFF">Photograph to be confirmed</text>
+</svg>

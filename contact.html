@@ -32,22 +32,25 @@
       <a href="quality.html">Quality</a>
       <a href="research.html">Research</a>
       <a href="contact.html">Contact</a>
+      <a href="staff.html">Staff</a>
+      <a class="btn btn-ghost" href="pay.html">Pay / Fees</a>
       <a class="btn btn-gold" href="apply.html">Apply</a>
     </nav>
   </div>
 </header>
 
 <main id="main">
-<section class="page-hero"><div class="wrap"><div class="eyebrow">Contact</div><h1>Admissions, registry &amp; general enquiries</h1></div></section>
+<section class="page-hero"><div class="wrap"><div class="eyebrow">Contact</div><h1>Admissions, registry &amp; general enquiries</h1><p>For finance and management, use <a href="staff.html">Contact staff &amp; management</a>.</p></div></section>
 <section>
   <div class="wrap grid-2">
-    <form class="panel" data-demo>
-      <div class="form-row"><div><label for="field-1">Name</label><input id="field-1" required></div><div><label for="field-2">Email</label><input id="field-2" type="email" required autocomplete="email"></div></div>
-      <label for="field-3">Office</label>
-      <select id="field-3"><option>Admissions</option><option>Registry</option><option>Student support</option><option>Partnerships / WIL hosts</option></select>
-      <label for="field-4">Message</label><textarea id="field-4" required></textarea>
+    <form class="panel" data-contact-form>
+      <div class="form-row"><div><label for="name">Name</label><input id="name" name="name" required autocomplete="name"></div><div><label for="email">Email</label><input id="email" name="email" type="email" required autocomplete="email"></div></div>
+      <label for="department">Office</label>
+      <select id="department" name="department"><option>Admissions</option><option>Registry</option><option>Student support</option><option>Partnerships / WIL hosts</option></select>
+      <label for="message">Message</label><textarea id="message" name="message" required></textarea>
       <button class="btn btn-gold" type="submit">Send</button>
-      <p class="success">Thank you. The Institute will respond from the relevant office.</p>
+      <p class="notice" role="status"></p>
+      <p class="note">This form posts to <code>CONTACT_FORM_ENDPOINT</code> when that placeholder is replaced. Until then, Send opens an email. Admissions and Registry use the addresses published on this page. Student support and partnerships addresses are <span class="tbc">to be confirmed</span>, so those messages go to admissions.</p>
     </form>
     <div>
       <div class="panel" style="margin-bottom:12px"><h3>Admissions</h3><p><a href="mailto:admissions@eastechinstitute.ac.za">admissions@eastechinstitute.ac.za</a></p></div>
@@ -57,6 +60,34 @@
   </div>
 </section>
 
+<section class="study-facts" aria-labelledby="study-facts-title">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Before you enrol</div>
+      <h2 id="study-facts-title">Courses, accommodation and accreditation</h2>
+      <p>Published EASTC facts only. Where a fact is not on the sites, it is marked to be confirmed.</p>
+    </div>
+    <div class="grid-3">
+      <article class="card"><div class="card-body">
+        <h3>Course availability</h3>
+        <p>EASTECH Institute lists higher certificates and degrees in Water Engineering, Information Technology, Cyber Security, and Digital Marketing. Modes on this site include contact, blended, distance, and work-integrated learning where the programme table says so. The news page says founding-cohort applications are open for 2026 in engineering, computing, and energy.</p>
+        <p>Institute fees, class sizes, and the next start date are <span class="tbc">to be confirmed</span>.</p>
+        <p>EASTC Technocentric Varsity, the campus college, publishes short practical courses. Its 2026 brochure says new courses start every Monday, with Saturday part-time classes. The college FAQ states short courses at R11,250. The brochure also lists other prices. Those figures are not Institute tuition.</p>
+        <p><a href="programmes.html">Institute programmes</a> · <a href="https://eastc.co.za/training-courses/">Campus course list</a></p>
+      </div></article>
+      <article class="card"><div class="card-body">
+        <h3>Student accommodation</h3>
+        <p>The EASTC 2026 brochure states shared accommodation at R2,100 for short courses only, and that students supply their own food and bedding. The college FAQ also states shared accommodation at R2,100, with 24-hour security at the premises and accommodation.</p>
+        <p>A room for EASTECH Institute higher-certificate or degree students is <span class="tbc">to be confirmed</span>.</p>
+      </div></article>
+      <article class="card"><div class="card-body">
+        <h3>Accreditation</h3>
+        <p>Institute programmes are designed to DHET standards. DHET registration and CHE programme accreditation for these Institute qualifications are <span class="tbc">to be confirmed</span>.</p>
+        <p>EASTC Technocentric Varsity publishes accreditation number ACC17/07/00004 in its 2026 brochure, and eastech.co.za shows DHET 2019/FE07/D33. The brochure also labels some short training courses non-accredited. Those campus registrations are not published as covering Institute higher certificates or degrees.</p>
+      </div></article>
+    </div>
+  </div>
+</section>
 </main>
 <footer>
   <div class="wrap foot-grid">
@@ -84,6 +115,8 @@
     <div>
       <h4>Connect</h4>
       <a href="contact.html">Contact</a>
+      <a href="staff.html">Staff &amp; management</a>
+      <a href="pay.html">Pay / Fees</a>
       <a href="campus.html">Campus</a>
       <a href="news.html">News</a>
       <a href="https://eastechfoundation.co.za/">EASTC Foundation</a>
@@ -92,10 +125,12 @@
   </div>
   <div class="wrap legal">
     <div>&copy; <span data-year></span> EASTECH Institute. All rights reserved.</div>
-    <div><span class="badge">DHET &amp; CHE alignment</span></div>
+    <div><span class="badge">Designed to DHET standards</span></div>
   </div>
 </footer>
 
+<script src="assets/js/site-config.js"></script>
+<script src="assets/js/eastc.js"></script>
 <script src="assets/js/site.js"></script>
 </body>
 </html>

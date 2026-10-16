@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pay student fees | EASTECH Institute</title>
+<meta name="description" content="Pay EASTECH Institute student fees with Yoco in test mode, or use the placeholder EFT details once they are confirmed.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body class="institute">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html">
+      <div class="mark">EI</div>
+      <div><strong>EASTECH Institute</strong><span>Advanced Technical Education</span></div>
+    </a>
+    <button class="menu-btn" aria-label="Menu">☰</button>
+    <nav class="nav-links">
+      <a href="about.html">About</a>
+      <a href="programmes.html">Programmes</a>
+      <a href="faculties.html">Faculties</a>
+      <a href="admissions.html">Admissions</a>
+      <a href="campus.html">Campus</a>
+      <a href="student-life.html">Student Life</a>
+      <a href="quality.html">Quality</a>
+      <a href="research.html">Research</a>
+      <a href="contact.html">Contact</a>
+      <a href="staff.html">Staff</a>
+      <a class="btn btn-ghost" href="pay.html">Pay / Fees</a>
+      <a class="btn btn-gold" href="apply.html">Apply</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="page-hero"><div class="wrap"><div class="eyebrow">Pay / Fees</div><h1>Pay student fees</h1><p>One payment. Amount and reference only. Yoco test mode is on until the placeholders in config are replaced.</p></div></section>
+<section>
+  <div class="wrap grid-2">
+    <form class="panel" data-pay-fees novalidate>
+      <p class="test-banner" data-test-banner>Yoco test mode is on. No live payment is taken.</p>
+      <p class="form-error" data-secret-warning role="alert"></p>
+      <p class="notice" data-pay-return role="status"></p>
+      <label for="amount">Amount (ZAR)</label>
+      <input id="amount" name="amount" type="number" inputmode="decimal" min="2" step="0.01" required autocomplete="off">
+      <label for="reference">Student number or invoice</label>
+      <input id="reference" name="reference" type="text" required maxlength="40" autocomplete="off">
+      <button class="btn btn-gold" type="submit">Pay student fees</button>
+      <p class="notice" data-pay-status role="status"></p>
+      <p class="form-error" data-pay-error role="alert"></p>
+      <p class="note">Yoco Checkout runs on your server through <code>YOCO_CHECKOUT_ENDPOINT</code>, or the button opens <code>YOCO_PAYMENT_LINK_URL</code>. Placeholders: <code>YOCO_PUBLIC_KEY</code>, <code>YOCO_SECRET_KEY</code>, <code>YOCO_PAYMENT_LINK_URL</code>, <code>YOCO_CHECKOUT_ENDPOINT</code>. The secret key is never sent from this page. A fixed payment link charges the amount saved on that link.</p>
+    </form>
+    <div>
+      <div class="panel">
+        <h2 style="color:var(--navy);font-size:22px;margin-bottom:8px">EFT banking details <span class="tbc">Placeholder</span></h2>
+        <p>Do not transfer money from this section. Banking details are not published. Nothing below is an account you can pay.</p>
+        <div class="table-wrap" style="margin-top:16px">
+          <table>
+            <tbody data-eft-rows>
+              <tr><th scope="row">Bank</th><td><span class="tbc">Placeholder — to be confirmed</span></td></tr>
+              <tr><th scope="row">Account name</th><td><span class="tbc">Placeholder — to be confirmed</span></td></tr>
+              <tr><th scope="row">Account number</th><td><span class="tbc">Placeholder — to be confirmed</span></td></tr>
+              <tr><th scope="row">Branch code</th><td><span class="tbc">Placeholder — to be confirmed</span></td></tr>
+              <tr><th scope="row">Account type</th><td><span class="tbc">Placeholder — to be confirmed</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note" style="margin-top:12px">When real details are published, use your student number or invoice number as the payment reference.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="funding" style="background:var(--gray)">
+  <div class="wrap grid-2">
+    <div>
+      <div class="eyebrow">Student funding</div>
+      <h2 style="color:var(--navy);font-size:32px;margin:12px 0">Loans and the Foundation</h2>
+      <p>These links go to the organisations that publish the loans or bursaries. EASTECH Institute does not decide who qualifies.</p>
+    </div>
+    <div class="funding-list">
+      <a href="https://loans.fundi.co.za/" rel="noopener noreferrer">Fundi student loans<span>Educational loans published by Fundi.</span></a>
+      <a href="https://www.fnb.co.za/loans/student-loans.html" rel="noopener noreferrer">FNB Student Loan<span>Published by First National Bank.</span></a>
+      <a href="https://www.standardbank.co.za/southafrica/personal/products-and-services/borrow-for-your-needs/student-loans/student-loans" rel="noopener noreferrer">Standard Bank Student Loan<span>Published by Standard Bank.</span></a>
+      <a href="https://www.absa.co.za/offers/personal/student-loan/" rel="noopener noreferrer">Absa Student Loan<span>Published by Absa.</span></a>
+      <a href="https://personal.nedbank.co.za/borrow/student-loans.html" rel="noopener noreferrer">Nedbank Student Loan<span>Published by Nedbank.</span></a>
+      <a href="https://eastechfoundation.co.za/">EASTC Foundation Scholarship and Access<span>Published as Scholarship &amp; Access: bursaries, rural student support, and women in technical fields.</span></a>
+    </div>
+  </div>
+</section>
+<section class="study-facts" aria-labelledby="study-facts-title">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Before you enrol</div>
+      <h2 id="study-facts-title">Courses, accommodation and accreditation</h2>
+      <p>Published EASTC facts only. Where a fact is not on the sites, it is marked to be confirmed.</p>
+    </div>
+    <div class="grid-3">
+      <article class="card"><div class="card-body">
+        <h3>Course availability</h3>
+        <p>EASTECH Institute lists higher certificates and degrees in Water Engineering, Information Technology, Cyber Security, and Digital Marketing. Modes on this site include contact, blended, distance, and work-integrated learning where the programme table says so. The news page says founding-cohort applications are open for 2026 in engineering, computing, and energy.</p>
+        <p>Institute fees, class sizes, and the next start date are <span class="tbc">to be confirmed</span>.</p>
+        <p>EASTC Technocentric Varsity, the campus college, publishes short practical courses. Its 2026 brochure says new courses start every Monday, with Saturday part-time classes. The college FAQ states short courses at R11,250. The brochure also lists other prices. Those figures are not Institute tuition.</p>
+        <p><a href="programmes.html">Institute programmes</a> · <a href="https://eastc.co.za/training-courses/">Campus course list</a></p>
+      </div></article>
+      <article class="card"><div class="card-body">
+        <h3>Student accommodation</h3>
+        <p>The EASTC 2026 brochure states shared accommodation at R2,100 for short courses only, and that students supply their own food and bedding. The college FAQ also states shared accommodation at R2,100, with 24-hour security at the premises and accommodation.</p>
+        <p>A room for EASTECH Institute higher-certificate or degree students is <span class="tbc">to be confirmed</span>.</p>
+      </div></article>
+      <article class="card"><div class="card-body">
+        <h3>Accreditation</h3>
+        <p>Institute programmes are designed to DHET standards. DHET registration and CHE programme accreditation for these Institute qualifications are <span class="tbc">to be confirmed</span>.</p>
+        <p>EASTC Technocentric Varsity publishes accreditation number ACC17/07/00004 in its 2026 brochure, and eastech.co.za shows DHET 2019/FE07/D33. The brochure also labels some short training courses non-accredited. Those campus registrations are not published as covering Institute higher certificates or degrees.</p>
+      </div></article>
+    </div>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <a class="brand" href="index.html" style="margin-bottom:16px;display:inline-flex">
+        <div class="mark">EI</div>
+        <div><strong>EASTECH Institute</strong><span>Advanced Technical Education</span></div>
+      </a>
+      <p>A future-focused higher education institution of the EASTC Technocentric Varsity ecosystem, preparing graduates for work, research, and enterprise in the digital and industrial economy.</p>
+    </div>
+    <div>
+      <h4>Study</h4>
+      <a href="programmes.html">Programmes</a>
+      <a href="faculties.html">Faculties</a>
+      <a href="admissions.html">Admissions</a>
+      <a href="apply.html">Apply now</a>
+    </div>
+    <div>
+      <h4>Institution</h4>
+      <a href="about.html">About</a>
+      <a href="quality.html">Quality assurance</a>
+      <a href="policies.html">Policies</a>
+      <a href="research.html">Research &amp; innovation</a>
+    </div>
+    <div>
+      <h4>Connect</h4>
+      <a href="contact.html">Contact</a>
+      <a href="staff.html">Staff &amp; management</a>
+      <a href="pay.html">Pay / Fees</a>
+      <a href="campus.html">Campus</a>
+      <a href="news.html">News</a>
+      <a href="https://eastechfoundation.co.za/">EASTC Foundation</a>
+      <p style="margin-top:12px"><a href="mailto:admissions@eastechinstitute.ac.za">admissions@eastechinstitute.ac.za</a><br>43 Maxwell Street, Kempton Park<br><a href="tel:+27113941488">011 394 1488</a> · <a href="tel:+27826051134">082 605 1134</a></p>
+    </div>
+  </div>
+  <div class="wrap legal">
+    <div>&copy; <span data-year></span> EASTECH Institute. All rights reserved.</div>
+    <div><span class="badge">Designed to DHET standards</span></div>
+  </div>
+</footer>
+<script src="assets/js/site-config.js"></script>
+<script src="assets/js/eastc.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
