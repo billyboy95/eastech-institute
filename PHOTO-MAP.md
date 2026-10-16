@@ -50,6 +50,15 @@ Navy solid heroes remain the **backup** (page/section background) if a photograp
 | `assets/img/study.jpg` | Cards, campus gallery |
 | `assets/img/graduates.jpg` | Campus gallery |
 
+### Leadership placeholders (not photographs)
+
+| File | Use |
+| --- | --- |
+| `assets/img/leadership/ceo-placeholder.svg` | Institute CEO slot. Monogram only. Swap the path in `assets/js/site-config.js` when a real portrait is supplied. |
+| `assets/img/leadership/md-placeholder.svg` | Institute Managing Director slot. Same rule. |
+
+Do not replace these with stock photos of people, or with any Food Court, yard, or welcome-sign image.
+
 ### Legacy files still in `assets/img/` — do not wire back as Institute
 
 These remain from older Pages deploys. They are Food Court, mixed yard, lounge, or stock shots. **Do not** use them as Institute heroes or “campus” identity:
